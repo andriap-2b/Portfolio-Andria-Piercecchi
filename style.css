@@ -2,13 +2,14 @@ body {
     padding: 0 2%;
     margin: 0;
     font-family: 'PT Sans', sans-serif;
+    background-color: #073B4C;
 }
 nav {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
     align-items: center;
-    background-color:white ;
+    background-color:#073B4C ;
     position: sticky;
     top: 0;
 }
@@ -21,36 +22,37 @@ nav .profile {
 nav .profile img {
     width: 40px;
     height: 40px;
-    border-radius: 50%;
+    border-radius: 25%;
 }
 nav .profile h1 {
     font-size: 15px;
     margin-left: 10px;
-    border-bottom: 1px solid;
+    border-bottom: 1px solid #EF476F;
+    color: white;
 }
 nav ul {
     display: flex;
     list-style-type: none;
+    padding-right: 38%;
 
 }
 nav ul li a{
     margin-left: 20px;
     cursor: pointer;
     text-decoration: none;
-    color: black;
+    color: white;
     transition: all .5s ease;
     padding: 5px;
     
 }
 nav ul li a:hover {
-    background-color: black;
+    background-color:#EF476F ;
     color: white;
-    box-shadow: O 0 10px black;
+    box-shadow: O 0 10px #EF476F ;
 }
 
 .page-content {
     margin: 4%;
-    background-color: #f8f8f8;
     padding: 20px;
 }
 .page-content header {
@@ -61,10 +63,11 @@ nav ul li a:hover {
     margin: 0;
     text-transform: uppercase;
     font-size: 5vw;
+    color: #EF476F;
 }
 .page-content header p {
     line-height: 30px;
-    color:yellowgreen;
+    color:white;
     font-size: 20px;
 }
 
@@ -80,14 +83,15 @@ nav ul li a:hover {
 .page-content .presentation-image img {
     max-width: 50%;
     height: auto;
-    transition: filter 1s;
-    
+    box-shadow:
+    0 0 10vw  0vw #fdfdfd,
+    0 0   2vw  0.4vw #ede4fa,
+
+    inset 0 0 .5vw  .2vw #ddddff,
+    inset 0 0 0.2vw  0.2vw #fdfdfd,
+    inset 0 0 .25vw  0.2vw #fdfdfd;
 }
 
-.page-content .presentation-image img:hover {
-   filter: brightness(75%);
-
-}
 .page-content .aboutme-section {
     width: 100%;
     padding: 100px 0px;
@@ -95,7 +99,14 @@ nav ul li a:hover {
 
 .page-content .aboutme-section img {
   height: auto;
-  width: 430px;
+  width: 35%;
+  box-shadow:
+    0 0 5vw  0vw yellowgreen,
+    0 0   2vw  0.4vw yellowgreen,
+
+    inset 0 0 .5vw  .2vw yellowgreen,
+    inset 0 0 0.2vw  0.2vw yellowgreen,
+    inset 0 0 .25vw  0.2vw yellowgreen;
 }
 
 .page-content .aboutme-section .about-text {
@@ -112,14 +123,14 @@ nav ul li a:hover {
 }
 
 .about-text h1{
-    color: black;
+    color:#EF476F;
     font-size: 3vw;
     text-transform: uppercase;
     margin-bottom: 20px;
 }
 
 .about-text h5{
-    color:black;
+    color:yellowgreen;
     letter-spacing: 2px;
     font-size: 22px;
     margin-bottom: 25px;
@@ -127,7 +138,7 @@ nav ul li a:hover {
 }
 
 .about-text p {
-   color: yellowgreen;
+   color: white;
    letter-spacing: 0.25px;
    line-height: 28px;
    font-size: 14px;
@@ -142,6 +153,7 @@ nav ul li a:hover {
 .page-content .projects-section h1 {
     text-transform: uppercase;
     font-size: 3vw;
+    color: #EF476F;
 }
 .page-content .projects-section .projects {
     display: flex;
@@ -156,10 +168,12 @@ nav ul li a:hover {
 
 .page-content .projects-section .projects .project h4 {
     margin: 0;
+    color: yellowgreen;
 }
 
 .page-content .projects-section .projects .project .description {
     font-size: 11px;
+    color: white;
 }
 
 .page-content .projects-section .projects .project .dates {
@@ -168,6 +182,13 @@ nav ul li a:hover {
 }
 .page-content .projects-section .projects .project img{
     width: 280px;
+    box-shadow:
+    0 0 5vw  0vw yellowgreen,
+    0 0   0.5vw  0.4vw yellowgreen,
+
+    inset 0 0 .5vw  .2vw yellowgreen,
+    inset 0 0 0.2vw  0.2vw yellowgreen,
+    inset 0 0 .25vw  0.2vw yellowgreen;
 }
 
 footer {
@@ -175,7 +196,7 @@ footer {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-around;
-    background-color: black;
+    background-color: #EF476F;
     color: white;
     padding: 10px;
 }
@@ -197,16 +218,17 @@ footer .colonne p:hover {
 h6 {
     text-align: center;
     padding: 5em 0em;
+    color: #EF476F;
 }
 
 .polling_message {
-    color:#f8f8f8;
+    color:#073B4C;
     float: left;
     margin-right: 2%;
   }
   
   .view_port {
-    background-color: #f8f8f8;
+    background-color: #073B4C;
     height: 25px;
     width: 100%;
     overflow: hidden;
@@ -214,10 +236,10 @@ h6 {
   
   .cylon_eye {
     background-color: yellowgreen;
-    background-image:         linear-gradient(to right, rgba(0, 0, 0, 0.9) 25%, rgba(188, 255, 64, 0.1) 50%, rgba(0, 0, 0, 0.9) 75%);
-    color: white;
-    height: 100%;
-    width: 20%;
+    background-image:         linear-gradient(to right, #073B4C 25%, rgba(188, 255, 64, 0.1) 50%, #073B4C 75%);
+    color: #073B4C;
+    height: 60%;
+    width: 50%;
   
     -webkit-animation: 4s linear 0s infinite alternate move_eye;
             animation: 4s linear 0s infinite alternate move_eye;
@@ -242,8 +264,9 @@ h6 {
     }
 
     .page-content .aboutme-section .aboutme img{
-        width: 70%;
-       padding-left: 17%;
+        width: 60%;
+       margin-left: 22%;
+       
     }
 
     .page-content .aboutme-section .aboutme .about-text h1{
